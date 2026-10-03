@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>MEGAMANIA Clone — Shmup Espacial 8-bit</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="cabinet">
+  <div id="top-hud">
+    <div class="hud-block"><span class="hud-label">SCORE</span><span id="hud-score">000000</span></div>
+    <div class="hud-block"><span class="hud-label">FASE</span><span id="hud-level">1-1</span></div>
+    <div class="hud-block"><span class="hud-label">VIDAS</span><span id="hud-lives">3</span></div>
+  </div>
+
+  <div id="screen-wrap">
+    <canvas id="game" width="240" height="320"></canvas>
+    <div id="overlay" class="show">
+      <h1 id="overlay-title">MEGA<br>MANIA</h1>
+      <p id="overlay-sub">CLONE 8-BIT</p>
+      <p class="help">← → / A D — mover<br>ESPAÇO — atirar<br>No celular: arraste + auto-tiro</p>
+      <button id="btn-start">▶ INICIAR</button>
+    </div>
+    <div id="flash-msg"></div>
+  </div>
+
+  <div id="bottom-hud">
+    <div id="energy-label">ENERGIA</div>
+    <div id="energy-track"><div id="energy-fill"></div></div>
+  </div>
+
+  <div id="touch-controls">
+    <button id="btn-left" aria-label="Esquerda">◀</button>
+    <button id="btn-fire" aria-label="Atirar">FOGO</button>
+    <button id="btn-right" aria-label="Direita">▶</button>
+  </div>
+  <p id="hint">P = pausa &nbsp;•&nbsp; M = mudo</p>
+</div>
+<script src="js/sprites.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/input.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
